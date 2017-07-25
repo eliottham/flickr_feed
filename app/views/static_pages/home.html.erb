@@ -1,0 +1,9 @@
+<%= form_for :search, url: home_path, method: "get" do |f| %>
+	<%= f.label :user_id, "Enter Flickr ID:" %>
+	<%= f.text_field :user_id %>
+	<%= f.submit "Search" %>
+<% end %>
+
+<% if !params[:search].nil? %>
+	<%= render_feed(params[:search][:user_id]) %>
+<% end %>
