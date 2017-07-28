@@ -8,7 +8,7 @@ module FlickrHelper
 
 	def render_feed(user_id)
 		begin
-			photos = user_photos(user_id)
+			photos = user_photos(user_id).in_groups_of(2)
 			render partial: '/flickr/feed', locals: { photos: photos }
 		rescue Exception
 			render partial: '/flickr/unavailable'

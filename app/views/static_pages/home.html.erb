@@ -1,9 +1,11 @@
-<%= form_for :search, url: home_path, method: "get" do |f| %>
-	<%= f.label :user_id, "Enter Flickr ID:" %>
-	<%= f.text_field :user_id %>
-	<%= f.submit "Search" %>
-<% end %>
+<div class='center'>
+	<%= form_for :search, url: home_path, method: "get" do |f| %>
+		<%= f.label :user_id, "Enter Flickr ID:", class: 'label' %>
+		<%= f.text_field :user_id, class: 'bar' %>
+		<%= f.submit "Search", class: 'button' %>
+	<% end %>
 
-<% if !params[:search].nil? %>
-	<%= render_feed(params[:search][:user_id]) %>
-<% end %>
+	<% if !params[:search].nil? %>
+		<%= render_feed(params[:search][:user_id]) %>
+	<% end %>
+</div>
