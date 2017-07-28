@@ -1,24 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+	This is a project to learn about working with third party APIs. In this project
+I use Flickr's API to retrieve the photo stream of a specified user. This is a 
+project taken from The Odin Project curriculum. More information about it can be
+found at https://www.theodinproject.com/courses/ruby-on-rails/lessons/apis?ref=lc-pb.
